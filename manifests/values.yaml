@@ -1,7 +1,7 @@
 namespace: smartops-api
 
 image:
-  imageRepository: docker.io/phengbunath/bootong
+  imageRepository:2
   tag: 2
 
 service:
