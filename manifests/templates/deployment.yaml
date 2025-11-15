@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: bootong
-          image: docker.io/phengbunath/bootong:1
+          image: docker.io/phengbunath/bootong:2
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
