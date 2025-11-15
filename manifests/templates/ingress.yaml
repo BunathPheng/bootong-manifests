@@ -1,0 +1,21 @@
+---
+# Source: helm for kubernetes/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bootong                  # Ingress name
+  labels:
+    app: bootong
+spec:
+  ingressClassName: nginx   # Optional ingressClass
+  rules:
+    - host: "bootong.smartops.space"
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bootong               # Links to Service name dynamically
+                port:
+                  number: 8080  # Links to service port dynamically
